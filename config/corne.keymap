@@ -82,7 +82,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "ALT_SYMBOL_BEHAVIOR";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
             bindings = <&mo 2>, <&kp LEFT_ALT>;
         };
     };
