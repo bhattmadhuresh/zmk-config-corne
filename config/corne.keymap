@@ -164,10 +164,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &kp F1   &kp F2   &kp F3             &kp F4  &kp F5                   &trans         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &kp SCROLLLOCK    &kp PRINTSCREEN
-&trans      &kp F6   &kp F7   &kp F8             &kp F9  &kp F10                  &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE  &kp SINGLE_QUOTE  &thisisunsafe_macro
-&to 1       &kp F11  &kp F12  &trans             &trans  &trans                   &trans         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans    &trans            &to 7
-                              &formatcode_macro  &trans  &optimizeimport_macro    &kp SPACE      &trans                &kp RALT
+&kp ESCAPE  &kp F1   &kp F2   &kp F3             &kp F4  &kp F5                   &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH      &kp SCROLLLOCK     &kp PRINTSCREEN
+&kp TILDE   &kp F6   &kp F7   &kp F8             &kp F9  &kp F10                  &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &kp SINGLE_QUOTE   &thisisunsafe_macro
+&to 1       &kp F11  &kp F12  &trans             &trans  &trans                   &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans         &kp DOUBLE_QUOTES  &to 7
+                              &formatcode_macro  &trans  &optimizeimport_macro    &kp SPACE  &trans                &kp RALT
             >;
         };
 
