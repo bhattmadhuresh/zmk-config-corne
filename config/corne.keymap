@@ -94,6 +94,15 @@
 
             tapping-term-ms = <200>;
         };
+
+        gaming_esc_behavior: gaming_esc_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GAMING_ESC_BEHAVIOR";
+            #binding-cells = <0>;
+            bindings = <&kp ESC>, <&kp GRAVE>;
+
+            tapping-term-ms = <250>;
+        };
     };
 
     keymap {
@@ -191,10 +200,10 @@
 
         GamingAddon {
             bindings = <
-&mt GRAVE ESCAPE  &kp N1  &trans        &kp N3          &kp N4          &kp N5             &trans  &kp INS  &kp HOME  &kp PAGE_UP    &kp SCROLLLOCK  &kp F1
-&trans            &trans  &trans        &trans          &kp UP_ARROW    &kp N6             &trans  &kp DEL  &kp END   &kp PAGE_DOWN  &trans          &kp F2
-&trans            &kp N2  &kp NUMBER_6  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW    &trans  &trans   &trans    &trans         &trans          &kp F4
-                                        &trans          &trans          &trans             &trans  &trans   &trans
+&gaming_esc_behavior  &kp N1  &trans        &kp N3          &kp N4          &kp N5             &trans  &kp INS  &kp HOME  &kp PAGE_UP    &kp SCROLLLOCK  &kp F1
+&trans                &trans  &trans        &trans          &kp UP_ARROW    &kp N6             &trans  &kp DEL  &kp END   &kp PAGE_DOWN  &trans          &kp F2
+&trans                &kp N2  &kp NUMBER_6  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW    &trans  &trans   &trans    &trans         &trans          &kp F4
+                                            &trans          &trans          &trans             &trans  &trans   &trans
             >;
         };
     };
